@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: order
+  jpa:
+    show-sql: true
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id=${spring:cloud:client:ipAddress}:${server:port}:
