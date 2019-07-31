@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
