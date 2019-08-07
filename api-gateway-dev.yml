@@ -16,8 +16,8 @@ zuul:
       path: /myProduct/**
       serviceId: product
 ribbon:
-  ReadTimeout: 10000
-  ConnectTimeout: 10000
+  ReadTimeout: 15000
+  ConnectTimeout: 15000
 management:
   endpoints:
     web:
