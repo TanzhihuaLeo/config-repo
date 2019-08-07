@@ -10,7 +10,10 @@ eureka:
     instance-id: ${spring.application.name}:${server.port}
 feign:
   client:
-    default:
-      #这里时间一定要调长，否则feign客户端会报ReadTimeOut  服务端报Error parsing HTTP request header
-      connectTimeout: 60000
-      readTimeout: 60000
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+  hystrix:
+    enabled: true
