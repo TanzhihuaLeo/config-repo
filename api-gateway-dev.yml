@@ -8,7 +8,7 @@ eureka:
 zuul:
   host:
     connect-timeout-millis: 15000   # HTTP连接超时要比Hystrix的大
-    socket-timeout-millis: 60000    # socket超时
+    socket-timeout-millis: 15000    # socket超时
   routes:
     #  全部服务忽略敏感头（全部服务都可传递cookie）
     sensitive-headers:
